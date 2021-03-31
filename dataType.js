@@ -2,14 +2,20 @@
 var nm = prompt("Enter the Student Name...")
 
 
+
+
 // FOR LOWER CASE
-// var sName = nm.toLowerCase();
-// var studentName = ['hamza','saad','zain','ali']
+var sName = nm.toLowerCase();
+var studentName = ['hamza','saad','zain','ali']
+
+
 
 
 // FOR UPPER CASE
-// var sName = nm.toUpperCase();
-// var studentName = ['HAMZA','SAAD','ZAIN','ALI']
+var sName = nm.toUpperCase();
+var studentName = ['HAMZA','SAAD','ZAIN','ALI']
+
+
 
 
 // FOR COMMON CASE e.g Zain, Hamza
