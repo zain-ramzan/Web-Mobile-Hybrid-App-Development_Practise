@@ -8,5 +8,5 @@ Website link : http://bulb-app-by-gorsi.surge.sh/
 
 
 
-![ON Bulb](onBulb.png)
-![OFF Bulb](OffBulb.png)
+![ON Bulb](onBulb.jpg)
+![OFF Bulb](OffBulb.jpg)
