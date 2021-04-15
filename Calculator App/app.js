@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function getNum(nm){
 	var result = document.getElementById("result");
 	result.value += nm;
@@ -12,4 +18,6 @@ function clearResult(){
 function getResult(){
 	var result = document.getElementById("result")
 	result.value = eval(result.value)
+
+	
 }
