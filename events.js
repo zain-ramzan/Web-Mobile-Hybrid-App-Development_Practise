@@ -20,21 +20,29 @@ function removeValue() {
 var param = document.getElementById("param");
 param.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores? <span id='less' style='cursor: pointer'></span> <span id='more' style='display: none'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores?  </span><span onclick='text()' id='btn' style='cursor: pointer; color brown; font-weight: bold'>...See More</span>"
 
-function text(){
+function text() {
 
 	var lessText = document.getElementById("less");
 	var moreText = document.getElementById("more");
 	var btnText = document.getElementById("btn");
 
-	if(lessText.style.display === "none"){
+	if (lessText.style.display === "none") {
 		lessText.style.display = "inline";
 		moreText.style.display = "none";
 		btnText.innerText = "...See More"
-	}else{
+	} else {
 		lessText.style.display = "none";
 		moreText.style.display = "inline";
 		btnText.innerText = "...See Less"
 	}
 
 
+}
+
+// ---------------------------
+var parag = document.getElementById("parag");
+parag.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo dolorum, voluptatum, maxime quas explicabo ipsam totam impedit nihil provident repellat ab, perspiciatis vitae temporibus voluptates delectus perferendis alias asperiores?"
+function applyCSS() {
+	var parag = document.getElementById("parag");
+	parag.className = "bold yellow border"
 }
