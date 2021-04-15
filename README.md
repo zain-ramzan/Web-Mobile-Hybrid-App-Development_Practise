@@ -5,9 +5,9 @@
 <hr>
  
  
-### 1- [Calculator App](http://calculator-app-by-gorsi.surge.sh/) <hr><br>
+### 1- [Calculator App](http://calculator-app-by-gorsi.surge.sh/)
 
-###### HTML,CSS, JavaScript 
+###### HTML,CSS, JavaScript <hr>
 
 ### 2- [Bulb App](http://bulb-app-by-gorsi.surge.sh/) <br>
 
