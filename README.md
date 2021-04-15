@@ -4,10 +4,9 @@
 
 <hr>
  
-__1 - [Calculator App](http://calculator-app-by-gorsi.surge.sh/) <hr>
-
-__2 - [Bulb App](http://bulb-app-by-gorsi.surge.sh/) <br>
-      __2.1 - [Bulb Hover on/off effect App](http://bulb-hover-app-by-gorsi.surge.sh/)
+ 1 - [Calculator App](http://calculator-app-by-gorsi.surge.sh/) <hr>
+2 - [Bulb App](http://bulb-app-by-gorsi.surge.sh/) <br>
+2.1 - [Bulb Hover on/off effect App](http://bulb-hover-app-by-gorsi.surge.sh/)
       
  <hr>     
 
