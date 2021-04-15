@@ -4,6 +4,8 @@
 
 
  
-__1 - Calculator App__ - [Web App Link](http://calculator-app-by-gorsi.surge.sh/) 
+__1 - Calculator App__ - [Link](http://calculator-app-by-gorsi.surge.sh/) 
 
-__2 - Bulb App__ - [Web App Link](http://bulb-app-by-gorsi.surge.sh/)
+__2 - Bulb App__ - [Link](http://bulb-app-by-gorsi.surge.sh/) <br>
+      __2.1 - Bulb Hover on/off effect App__ - [Link](http://bulb-hover-app-by-gorsi.surge.sh/)
+
