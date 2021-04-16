@@ -43,7 +43,7 @@ function reset(){
 	minHeading.innerHTML = 0;
 	secHeading.innerHTML = 0;
 	msecHeading.innerHTML = 0;
-
+	stop();
 	document.getElementById("start").disabled = false
 
 }
