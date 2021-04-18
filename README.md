@@ -19,9 +19,9 @@
 
 ### 3- [Stop Watch App](http://stop-watch-by-gorsi.surge.sh/)
 
-###### HTML,CSS, JavaScript 
-<hr>
-### 3- [Simple chat App](http://stop-watch-by-gorsi.surge.sh/)
+###### HTML,CSS, JavaScript  <hr>
+
+### 4- [Simple chat App](http://stop-watch-by-gorsi.surge.sh/)
 
 ###### HTML,CSS, JavaScript(Mostly Structure is Design and develop by JavaScript) 
 <hr>
