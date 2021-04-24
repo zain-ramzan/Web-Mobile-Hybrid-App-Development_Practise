@@ -11,7 +11,7 @@ body {
 	border: 3px solid teal;
 	display: inline-block;
 	background-color: grey;
-	color: white;
+	color: rgb(255, 255, 255);
 	border-radius: 20px 20px 20px;
 	box-shadow: 1px 1px 10px black;
 	margin-top: 30px;
@@ -50,4 +50,20 @@ body {
 .right{
 	float: right;
 	margin-right: 50px;
+}
+.btn{
+	border-radius: 10px 10px 10px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px rgb(0, 0, 0);
+	border: none;
+	padding: 5px 5px;
+	color: black;
+	background-color: white;
+}
+
+.btn:hover{
+	background-color: grey;
+	color: white;
+	font-weight: bold;
 }
