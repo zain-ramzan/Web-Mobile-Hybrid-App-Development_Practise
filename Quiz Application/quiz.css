@@ -1,69 +1,73 @@
-body {
+body{
+	font-family: 'Roboto Slab', serif;
+	background-image: linear-gradient(to right, green, orange);
+
+}
+.container{
+	background: rgba(255, 255, 255, 0.5);
+	width: 1000px;
+	height: 330px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 0 8px 3px #fff;
+	border: 1px solid green;
+	padding: 20px
+}
+.title{
+	padding-top: 20px;
 	text-align: center;
-}
-
-
-.box {
-	display: grid;
-	width: 70%;
-	grid-template-columns: 1fr;
-	grid-gap: 10px 2em;
-	border: 3px solid teal;
-	display: inline-block;
-	background-color: grey;
-	color: rgb(255, 255, 255);
-	border-radius: 20px 20px 20px;
-	box-shadow: 1px 1px 10px black;
-	margin-top: 30px;
-}
-
-.box :first-child {
-	align-self: center;
+	color: green;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .question{
-	/* border: 2px solid rgb(87, 80, 79); */
+	padding: 20px;
+	font-size: 22px;
+	background: green;
+	border-radius: 20px;
+	margin: 10px 0;
+	color: #f6f6f6;
 }
-
-.answer{
-	/* border: 2px solid rgb(24, 19, 18); */
-	text-align: left;
-
-	font-size: 25px;
+.option{
+	width: 470px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	margin: 10px 0 10px 10px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	color: #000
 }
-
-.button{
-	/* border: 2px solid rgb(83, 74, 72); */
-	text-align: center;
+.option:hover{
+	background: orange;
+	color: #f6f6f6
 }
-.padding{
-	padding: 20px 20px;
-}
-.op{
-	width: 50px;
-	height: 18px;
-}
-
-.left{
-	margin-left: 50px;
-	float: left;
-}
-.right{
+.next-btn{
 	float: right;
-	margin-right: 50px;
-}
-.btn{
-	border-radius: 10px 10px 10px;
-	font-size: 1.5rem;
-	cursor: pointer;
-	box-shadow: 1px 1px 5px rgb(0, 0, 0);
 	border: none;
-	padding: 5px 5px;
-	color: black;
-	background-color: white;
-}
-
-.btn:hover{
-	background-color: grey;
-	color: white;
+	outline: none;
+	background: green;
+	width: 130px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	margin: 10px;
 	font-weight: bold;
+	color: white;
+}
+.next-btn:hover{
+	background: orange;
+	color: #f6f6f6
+}
+.result{
+	height: 100px;
+	text-align: center;
+	font-size: 75px;
+}
+.option input:checked .option{
+	background: #08038c;
+	color: #f6f6f6
 }

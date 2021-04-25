@@ -10,21 +10,25 @@ body{
 	box-shadow: 1px 1px 5px rgb(0, 0, 0);
 	border: none;
 	padding: 10px 10px;
+	margin: 10px;
+
 }
 
 #btn{
-	border-radius: 10px 10px 10px;
-	font-size: 1.5rem;
-	cursor: pointer;
-	box-shadow: 1px 1px 5px rgb(0, 0, 0);
+	text-align: center;
 	border: none;
-	padding: 5px 5px;
-	color: black;
-	background-color: white;
+	outline: none;
+	background: green;
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	margin: 10px;
+	font-size: 18px;
+	color: white;
 }
 
 #btn:hover{
 	background-color: grey;
 	color: white;
-	font-weight: bold;
 }

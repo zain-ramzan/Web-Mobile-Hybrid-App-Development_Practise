@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Question | AnaCloud</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-		<div class="box">
-			<!-- Quesion -->
-			<div class="question">
-				<div>
-					<p class="left">Question:</p>
-					<p class="right">Score:</p>
-				</div>
-				<br>
-				<br>
-	
-				<p> 
-					<h3>Who is the Richest Person?</h3>
-				</p>
-
-			</div>
-
-			<!-- Answer -->
-			<div class="answer padding">
-				<input type="radio" class="op">Imran Khan</input><br>
-				<input type="radio" class="op">Bill</input><br>
-				<input type="radio" class="op">Zain</input><br>
-				<input type="radio" class="op">Hamza</input><br>
-			</div>
-
-			<!-- Button -->
-			<div class="button padding">
-				<button class="btn">Next Question</button>
-			</div>
-
-		    </div>
-
+		<div id="cont" class="container">
+			<div class="title">Development Quiz</div>
+			<div id="question" class="question"></div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span> </label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span> </label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span> </label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span> </label>
+			<button id="next" class="next-btn" onclick="loadNextQuestion();">Next Quetion</button>
+		</div>
+		<div id="result" class="result container" style="display: none;"></div>
 </body>
 </html>
