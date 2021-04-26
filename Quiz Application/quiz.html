@@ -7,15 +7,15 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="quiz.css">
 </head>
-<body>
+<body onload="showQuestion(0)">
 		<div id="cont" class="container">
 			<div class="title">Development Quiz</div>
 			<div id="question" class="question"></div>
-			<input type="radio" class="opt"></input>
-			<input type="radio" class="opt"></input>
-			<input type="radio" class="opt"></input>
-			<input type="radio" class="opt"></input>
-			<button id="next" class="next-btn" onclick="loadNextQuestion();">Next Quetion</button>
+			<p class="opt" onclick="activeness(0)"></p>
+			<p class="opt" onclick="activeness(1)"></p>
+			<p class="opt" onclick="activeness(2)"></p>
+			<p class="opt" onclick="activeness(3)"></p>
+			<p id="next" class="next-btn" onclick="showQuestion()">Next Quetion</button>
 		</div>
 		<div id="result" class="result container" style="display: none;"></div>
 </body>

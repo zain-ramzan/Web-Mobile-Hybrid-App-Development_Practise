@@ -35,16 +35,20 @@ body{
 .opt{
 	width: 470px;
 	display: inline-block;
-	padding: 10px 0 10px 15px;
+	padding-top: 10px;
 	vertical-align: middle;
 	margin: 10px 0 10px 10px;
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 20px;
-	color: #000
+	color: #000;
+	border: 0;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
 }
-.option:hover{
+.opt:hover{
 	background: orange;
-	color: #f6f6f6
+	color: #f6f6f6;
 }
 .next-btn{
 	float: right;
@@ -52,23 +56,21 @@ body{
 	outline: none;
 	background: green;
 	width: 130px;
-	height: 35px;
+	height: 30px;
 	border-radius: 20px;
 	cursor: pointer;
 	margin: 10px;
 	font-weight: bold;
 	color: white;
+	text-align: center;
+	padding-top: 10px;
 }
 .next-btn:hover{
 	background: orange;
 	color: #f6f6f6
 }
-.result{
-	height: 100px;
-	text-align: center;
-	font-size: 75px;
-}
-.option input:checked .option{
-	background: #08038c;
-	color: #f6f6f6
+
+.active{
+	background-color: green;
+	color: white;
 }

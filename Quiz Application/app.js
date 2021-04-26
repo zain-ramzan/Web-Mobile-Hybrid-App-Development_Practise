@@ -52,13 +52,35 @@ var questionsArray = [
 ];
 
 
-//Question
-var question = document.getElementById("question");
-question.innerHTML = questionsArray[0].question;
+var questionCount = 0;
+var score = 0;
 
 //Option
-var opt = document.getElementsByClassName("opt")
+var option = document.getElementsByClassName("opt");
+for (var i = 0; i < option.length; i++) {
+    option[i].innerHTML = questionsArray[0].options[i]
+}
 
-opt[1].innerHTML = questionsArray[0].options[2]
-// for(var i = 0; i < opt.length; i++){
-// }
+
+
+
+//function for Question Rendering
+function showQuestion(e) {
+    //QUESTION
+    var questions = document.getElementById("question");
+    questions.innerHTML = questionsArray[e].question;
+    //ANSWER
+    for (var i = 0; i < option.length; i++) {
+        option[i].innerHTML = questionsArray[e].options[i].toUpperCase();
+    }
+}
+
+
+//Add ACTIVE Class to Options
+function activeness(e){
+    var activeness = document.getElementsByClassName("opt");
+    for(var i=0; i<activeness.length; i++){
+        activeness[i].classList.remove("active")
+    }
+    activeness[e].classList.add("active")
+}
