@@ -51,3 +51,14 @@ var questionsArray = [
     },
 ];
 
+
+//Question
+var question = document.getElementById("question");
+question.innerHTML = questionsArray[0].question;
+
+//Option
+var opt = document.getElementsByClassName("opt")
+
+opt[1].innerHTML = questionsArray[0].options[2]
+// for(var i = 0; i < opt.length; i++){
+// }
