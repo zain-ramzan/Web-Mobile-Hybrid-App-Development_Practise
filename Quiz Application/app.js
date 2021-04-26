@@ -73,14 +73,68 @@ function showQuestion(e) {
     for (var i = 0; i < option.length; i++) {
         option[i].innerHTML = questionsArray[e].options[i].toUpperCase();
     }
+    question()
+    result();
+    
 }
 
 
+
 //Add ACTIVE Class to Options
-function activeness(e){
+function activeness(e) {
     var activeness = document.getElementsByClassName("opt");
-    for(var i=0; i<activeness.length; i++){
+    for (var i = 0; i < activeness.length; i++) {
         activeness[i].classList.remove("active")
     }
     activeness[e].classList.add("active")
 }
+
+function removeness() {
+    var removeness = document.getElementsByClassName("opt");
+    for (var i = 0; i < removeness.length; i++) {
+        removeness[i].classList.remove("active")
+    }
+}
+
+//Check Answer
+function checkAnswer(e) {
+    var ans = document.getElementsByClassName("active");
+    if (ans[0].innerHTML.toLowerCase() == questionsArray[e].answer) {
+        score += 10;
+    }
+    result();
+}
+
+
+function nextQuestion() {
+    checkAnswer(questionCount);
+    questionCount++;
+    if (questionCount <= questionsArray.length - 1) {
+        showQuestion(questionCount);
+    }else{
+        endQuiz()
+    }
+    removeness();
+}
+
+
+function result() {
+    var sc = document.getElementById("score")
+    sc.innerHTML = "Score : " + score;
+}
+function question() {
+    var question = document.getElementById("ques");
+    question.innerHTML = "Question : " + questionCount;
+}
+
+function endQuiz(){
+
+
+    var btn = document.getElementById("next")
+    btn.remove()
+    var option = document.getElementsByClassName("opt");
+    option.classList.remove()
+}
+
+
+

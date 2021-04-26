@@ -4,18 +4,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Quiz Application | AnaCloud</title>
 	<link rel="stylesheet" href="quiz.css">
 </head>
 <body onload="showQuestion(0)">
 		<div id="cont" class="container">
 			<div class="title">Development Quiz</div>
+			<div>
+				<p id="ques"></p>
+				<p id="score"></p>
+			</div>
 			<div id="question" class="question"></div>
 			<p class="opt" onclick="activeness(0)"></p>
 			<p class="opt" onclick="activeness(1)"></p>
 			<p class="opt" onclick="activeness(2)"></p>
 			<p class="opt" onclick="activeness(3)"></p>
-			<p id="next" class="next-btn" onclick="showQuestion()">Next Quetion</button>
+			<p id="next" class="next-btn" onclick="nextQuestion()">Next Quetion</button>
 		</div>
 		<div id="result" class="result container" style="display: none;"></div>
 </body>
