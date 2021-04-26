@@ -122,18 +122,16 @@ function result() {
     var sc = document.getElementById("score")
     sc.innerHTML = "Score : " + score;
 }
+
+
 function question() {
     var question = document.getElementById("ques");
     question.innerHTML = "Question : " + questionCount;
 }
 
+
 function endQuiz(){
-
-
-    var btn = document.getElementById("next")
-    btn.remove()
-    var option = document.getElementsByClassName("opt");
-    option.classList.remove()
+    window.location.href = "result.html"
 }
 
 
