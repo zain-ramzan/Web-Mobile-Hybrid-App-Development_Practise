@@ -1,0 +1,57 @@
+
+# Uses of LET!
+
+- let:
+    - variable cannot to used more than 1 time
+        e.g
+        let lastname = "github"
+        let lastname = "gitbash" 
+        answer: //lastname already used.
+
+  -------------------------
+
+    - cannot get outside the object
+        e.g
+        if(true){
+            let name = "reactjs"
+        }
+        console.log(name);  //name cannot get
+
+  -------------------------------------------------- 
+
+#Uses of VAR!
+  
+- var:
+    - we can update var value anytime
+        e.g
+        var name = "web"
+        var name = "mobile"
+        console.log(name)
+        answer: //mobile
+
+  -------------------------
+
+    - can get value at anyplace in the file
+
+  -------------------------------------------------- 
+
+# Uses of CONST!
+    - const:
+        - can be used only for read the value
+            e.g
+            const school = "piaic";
+            
+          -------------------------
+
+        - cannot to used more than 1 time
+            e.g
+            const lastname = "github"
+            const lastname = "gitbash" 
+            answer: //lastname already used.    
+        
+          -------------------------
+
+        - get at anyplace    
+            
+
+ 
