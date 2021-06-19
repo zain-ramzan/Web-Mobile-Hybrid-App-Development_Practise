@@ -41,11 +41,21 @@ document.write("<br><br><br>")
 //------------------------- Object Destructuring -------------------------
 document.write(`<h1>------------------------- Object Destructuring -------------------------</h1>`)
 
-let studentDetaile = {
-    sname: "Zain Ramzan",
-    school: "PIAIC",
-    rollno: "1234"
-}
+        let studentDetaile = {
+            sname: "Zain Ramzan",
+            school: "PIAIC",
+            rollno: "1234"
+        }
 
-let {sname,school,rollno} = studentDetaile;
-document.write(sname,`<br>`,school,`<br>`,rollno)
+        let {sname,school,rollno} = studentDetaile;
+        document.write(sname,`<br>`,school,`<br>`,rollno)
+
+
+
+//------------------------- Ternary Operators -------------------------
+document.write(`<h1>------------------------- Ternary Operators -------------------------</h1>`)
+
+        var shop = "close"
+        //Same like if else statement
+        var check = shop == "open" ? "You can purchasing! Shop is open." : "Sorry! You cannot purchasing. Shop is close."
+        document.write(check)
