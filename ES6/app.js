@@ -36,3 +36,16 @@ document.write("<br><br><br>")
                 var companies1 = ["Google", " Microsoft"]
                 var companies2 = [...companies1," facebook"]
                 document.write(companies2)
+
+
+//------------------------- Object Destructuring -------------------------
+document.write(`<h1>------------------------- Object Destructuring -------------------------</h1>`)
+
+let studentDetaile = {
+    sname: "Zain Ramzan",
+    school: "PIAIC",
+    rollno: "1234"
+}
+
+let {sname,school,rollno} = studentDetaile;
+document.write(sname,`<br>`,school,`<br>`,rollno)
