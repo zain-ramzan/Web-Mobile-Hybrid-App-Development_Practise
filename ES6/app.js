@@ -59,3 +59,28 @@ document.write(`<h1>------------------------- Ternary Operators ----------------
         //Same like if else statement
         var check = shop == "open" ? "You can purchasing! Shop is open." : "Sorry! You cannot purchasing. Shop is close."
         document.write(check)
+
+        //anothe ternary operator
+        var status = true;
+        var check = status && "Zain Ramzan"
+        document.write(`<br>`,check)
+
+        
+//------------------------- Promise -------------------------
+document.write(`<h1>------------------------- Promise -------------------------</h1>`)
+
+var promise = new Promise(function(reslove,reject){
+        var shop = "Open"
+        if(shop == "Open"){
+                reslove("Wellcome! You can purchasing. Shop is OPEN.")
+        }
+        else{
+                reject("Very Sorry! You cannot purchasing. Shop is CLOSE.")
+        }
+})
+promise.then(function(data){
+        document.write("This is Reslove ==>  ",data);
+})
+.catch(function(error){
+        document.write("This is Error ==>  ",error);
+})
