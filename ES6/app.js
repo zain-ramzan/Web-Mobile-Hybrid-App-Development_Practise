@@ -165,13 +165,24 @@
         // }
 
 
-        document.write(`<h1>------------------------- Array Map -------------------------</h1>`)
+        // document.write(`<h1>------------------------- Array Map -------------------------</h1>`)
 
 
-                        let nameArray = [2,3,4,5,6,7,8,9]
-                        console.log(nameArray);
-                        document.write(nameArray,`<br><br>`)
+        //                 let nameArray = [2,3,4,5,6,7,8,9]
+        //                 console.log(nameArray);
+        //                 document.write(nameArray,`<br><br>`)
 
-                        let multiply_Array = nameArray.map(a => a*2)
-                        console.log(multiply_Array);
-                        document.write(multiply_Array)
+        //                 let multiply_Array = nameArray.map(a => a*2)
+        //                 console.log(multiply_Array);
+        //                 document.write(multiply_Array)
+
+
+
+
+                        function Student (name,email){
+                                this.name = name;
+                                this.email = email;
+                        }
+
+                        	let student1 = new Student("Zain","zain@gmail.com")
+                               console.log(student1)
