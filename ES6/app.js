@@ -104,26 +104,47 @@
 
 
 
-        document.write(`<h1>------------------------- Arrow Function -------------------------</h1>`)
+        // document.write(`<h1>------------------------- Arrow Function -------------------------</h1>`)
 
                         
-                        let arrow1 = nm => {
-                                document.write(`Hi ${nm}! <br><br>`)
-                        }
-                        arrow1("PIAIC")
+        //                 let arrow1 = nm => {
+        //                         document.write(`Hi ${nm}! <br><br>`)
+        //                 }
+        //                 arrow1("PIAIC")
 
-                        //we can also write as
-                        let arrow = (name1,name2) => {
-                                document.write(`Hello ${name1} and ${name2}! <br><br>`)
-                        }
-                        arrow("Zain Ramzan","Hamza")
+        //                 //we can also write as
+        //                 let arrow = (name1,name2) => {
+        //                         document.write(`Hello ${name1} and ${name2}! <br><br>`)
+        //                 }
+        //                 arrow("Zain Ramzan","Hamza")
 
-                        //use of Return
-                        let hello = _ =>{
-                                return "Zain Ramzan Gorsi <br><br>"
-                        }
-                        document.write(hello())
+        //                 //use of Return
+        //                 let hello = _ =>{
+        //                         return "Zain Ramzan Gorsi <br><br>"
+        //                 }
+        //                 document.write(hello())
 
-                        //Arrow function also use as
-                        let nm = () => "Zain Ramzan"
-                        document.write(nm())
+        //                 //Arrow function also use as
+        //                 let nm = () => "Zain Ramzan"
+        //                 document.write(nm())
+
+
+
+        // document.write(`<h1>------------------------- Callback Function -------------------------</h1>`)
+
+
+        //                 let getData =(render_data)=>{
+        //                         setTimeout(()=>render_data("Zain Ramzan"),3000)
+        //                 }
+        //                 let render_data = (nm) =>{
+        //                         document.write(nm)
+        //                 }
+        //                 getData(render_data)
+
+
+        document.write(`<h1>------------------------- Filtering -------------------------</h1>`)
+
+        let nm = [{name: "Zain Ramzan", age: 20},{name: "Hamza",age: 25},{name: "Saad",age:  15}];
+
+        let filter = nm.filter(a=>a.age <= 20)
+        console.log(filter);
