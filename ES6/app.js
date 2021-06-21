@@ -142,9 +142,36 @@
         //                 getData(render_data)
 
 
-        document.write(`<h1>------------------------- Filtering -------------------------</h1>`)
+        // document.write(`<h1>------------------------- Filtering -------------------------</h1>`)
 
-        let nm = [{name: "Zain Ramzan", age: 20},{name: "Hamza",age: 25},{name: "Saad",age:  15}];
 
-        let filter = nm.filter(a=>a.age <= 20)
-        console.log(filter);
+        // let nm = [{name: "Zain Ramzan", age: 20},{name: "Hamza",age: 25},{name: "Saad",age:  15}];
+
+        // let filter = nm.filter(a=>a.age <= 20)
+        // console.log(filter);
+
+
+        // document.write(`<h1>------------------------- Searching -------------------------</h1>`)
+
+
+        // var nm = "Zain";
+        // let search = "Z";
+
+        // if(nm.startsWith(search)){
+        //         console.log(nm);
+        // }
+        // else{
+        //         console.log("Error");
+        // }
+
+
+        document.write(`<h1>------------------------- Array Map -------------------------</h1>`)
+
+
+                        let nameArray = [2,3,4,5,6,7,8,9]
+                        console.log(nameArray);
+                        document.write(nameArray,`<br><br>`)
+
+                        let multiply_Array = nameArray.map(a => a*2)
+                        console.log(multiply_Array);
+                        document.write(multiply_Array)
