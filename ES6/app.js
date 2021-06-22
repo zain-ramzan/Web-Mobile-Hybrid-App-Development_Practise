@@ -168,7 +168,7 @@
         // document.write(`<h1>------------------------- Array Map -------------------------</h1>`)
 
 
-        //                 let nameArray = [2,3,4,5,6,7,8,9]
+                        //let nameArray = [2,3,4,5,6,7,8,9]
         //                 console.log(nameArray);
         //                 document.write(nameArray,`<br><br>`)
 
@@ -179,10 +179,23 @@
 
 
 
-                        function Student (name,email){
-                                this.name = name;
-                                this.email = email;
-                        }
+                        // function Student (name,email){
+                        //         this.name = name;
+                        //         this.email = email;
+                        // }
 
-                        	let student1 = new Student("Zain","zain@gmail.com")
-                               console.log(student1)
+                        // 	let student1 = new Student("Zain","zain@gmail.com")
+                        //        console.log(student1)
+
+
+        // document.write(`<h1>------------------------- Constructor -------------------------</h1>`)
+
+
+                                class Student{
+                                        constructor(name,email){
+                                                this.name = name;
+                                                this.email = email;
+                                        }
+                                }
+                                let student1 = new Student("Zain","zain@gmail.com");
+                                console.log(student1);
