@@ -191,7 +191,7 @@
 
         // document.write(`<h1>------------------------- Constructor -------------------------</h1>`)
 
-                                console.log("======================CONSTRUCTOR======================");
+                                console.log("======================  CONSTRUCTOR  ======================");
 
                                 class Student{
                                         constructor(name,email){
@@ -199,5 +199,17 @@
                                                 this.email = email;
                                         }
                                 }
-                                let student1 = new Student("Zain","zain@gmail.com");
+
+
+                                class Institude extends Student {
+                                       constructor(name,email,institude){
+                                               super(name,email);
+                                               this.institude = institude
+                                       } 
+                                }
+
+
+
+
+                                let student1 = new Institude("Zain","zain@gmail.com","PIAIC");
                                 console.log(student1);
