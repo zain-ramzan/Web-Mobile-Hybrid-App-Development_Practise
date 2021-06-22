@@ -188,8 +188,10 @@
                         //        console.log(student1)
 
 
+
         // document.write(`<h1>------------------------- Constructor -------------------------</h1>`)
 
+                                console.log("======================CONSTRUCTOR======================");
 
                                 class Student{
                                         constructor(name,email){
