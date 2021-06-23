@@ -35,3 +35,8 @@ button{
 h1{
   color: white;
 }
+@media screen and (max-width: 500px) {
+  .container{
+    width: 95%;
+  }
+}
