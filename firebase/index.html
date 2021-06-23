@@ -6,17 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
     <link rel="stylesheet" href="firebase.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCzMAyEw1wNf1iAt6aPx_dhiH2mJtB_eXM",
+          authDomain: "database-cc4e2.firebaseapp.com",
+          databaseURL: "https://database-cc4e2-default-rtdb.firebaseio.com",
+          projectId: "database-cc4e2",
+          storageBucket: "database-cc4e2.appspot.com",
+          messagingSenderId: "661155440932",
+          appId: "1:661155440932:web:ef2370be6c71a947e9ebb1",
+          measurementId: "G-P55BL0QPG4"
+        };
+        firebase.initializeApp(firebaseConfig);
+      </script>
 </head>
 
 <body>
     <div class="container">
-        <label><b>Full Name :</b></label>
-        <input type="text" placeholder="Enter Full Name" id="username"><br><br>
+        <h1>If you are NEW User!</h1>
+
+        <label><b>Email :</b></label>
+        <input type="email" placeholder="Enter the email" id="email"><br><br>
 
         <label for="psw"><b>Password :</b></label>
         <input type="password" placeholder="Enter Password" id="password"><br><br>
 
-        <button onclick="getData()">Login</button>
+        <button onclick="signup()">Sign Up</button>
+    </div>
+   
+    <div class="container">
+        <h1>If you already a User!</h1>
+        <label><b>Email :</b></label>
+        <input type="email" placeholder="Enter the email" id="l-email"><br><br>
+
+        <label for="psw"><b>Password :</b></label>
+        <input type="password" placeholder="Enter Password" id="l-password"><br><br>
+
+        <button onclick="login()">log In</button>
     </div>
 
 </body>
