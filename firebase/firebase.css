@@ -3,11 +3,13 @@ body{
 }
 .container{
   display: inline-block;
-  width: 40%;
+  width: 500px;
   background-color: goldenrod;
-  padding: 70px 0px;
+  padding: 50px 50px;
   border-radius: 10px;
-  margin: 100px auto;
+  margin: 50px auto;
+  clear: both;
+  text-align: center;
 }
 input{
   font-size: 15px;
@@ -15,6 +17,8 @@ input{
   border: 1px solid goldenrod;
   border-radius: 5px;
   padding: 10px 10px;
+  width: 50%;
+  clear: both;
 }
 b{
   color: white;
@@ -33,9 +37,26 @@ button{
 }
 h1{
   color: white;
+  letter-spacing: 2px;
 }
 @media screen and (max-width: 500px) {
   .container{
     width: 95%;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
   }
+}
+p{
+  color: white;
+}
+a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+a:hover{
+  background-color: white;
+  color: goldenrod;
 }

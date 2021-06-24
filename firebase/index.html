@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Auth</title>
+    <title>Firebase Authentication</title>
     <link rel="stylesheet" href="firebase.css">
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
@@ -25,7 +25,10 @@
 
 <body>
     <div class="container">
-        <h1>If you are NEW User!</h1>
+        <h1>SIGNUP</h1>
+
+        <label><b>Full Name :</b></label>
+        <input type="text" placeholder="Enter the full name" id="username"><br><br>
 
         <label><b>Email :</b></label>
         <input type="email" placeholder="Enter the email" id="email"><br><br>
@@ -33,19 +36,11 @@
         <label for="psw"><b>Password :</b></label>
         <input type="password" placeholder="Enter Password" id="password"><br><br>
 
-        <button onclick="signup()">Sign Up</button>
-    </div>
-   
-    <div class="container">
-        <h1>If you already a User!</h1>
-        <label><b>Email :</b></label>
-        <input type="email" placeholder="Enter the email" id="l-email"><br><br>
+        <button onclick="signup()">Sign Up</button><br><br>
 
-        <label for="psw"><b>Password :</b></label>
-        <input type="password" placeholder="Enter Password" id="l-password"><br><br>
-
-        <button onclick="login()">log In</button>
+        <p>If you already a User? <a href="login.html">login</a></p>
     </div>
+
 
 </body>
 <script src="firebase.js"></script>
