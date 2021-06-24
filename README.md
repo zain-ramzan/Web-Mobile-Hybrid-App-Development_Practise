@@ -30,7 +30,7 @@
 ###### HTML,CSS, JavaScript (Mostly Structure is Design and develop by JavaScript) 
 <hr>
 
-### 6 - [Email/Password Firebase Authentication](http://firebaseauth-email_gorsi.surge.sh/)
+### 6 - [Email/Password Firebase Authentication](http://firebase-auth-gorsi.surge.sh/)
 
 ###### HTML,CSS, JavaScript, firebase Authentication
 <hr>
