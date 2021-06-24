@@ -6,6 +6,11 @@ function signup() {
   firebase.auth().createUserWithEmailAndPassword(email.value, pass.value)
     .then((result) => {
       console.log("Result Message ===>", result);
+      document.write(
+          `<h1> Thank you, Your Data is Saved Successfully! </h1>
+
+          `
+      )
 
     })
     .catch((error) => {
@@ -14,29 +19,12 @@ function signup() {
     });
 
 
-    document.write(`<h1>Name: ${user.value}</h1>`)
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   email.value = ""
   pass.value = ""
   user.value = ""
 }
 
-
+signup()
 
 
 
