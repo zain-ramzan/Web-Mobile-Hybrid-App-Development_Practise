@@ -1,3 +1,5 @@
+import React from 'react';
+import Maping from "./components/maping"
 import './App.css';
 
 function App() {
@@ -5,18 +7,7 @@ function App() {
   return (
     <div>
       <h1>React Practise</h1>
-    	<h4>-----------------------------------------------------</h4>
-    	<h4>Learn Maping</h4>
-      <ul>
-        {todos.map((item,index)=>{
-          return(
-            <li key={index}>{item.name}</li>
-          )
-        })}
-      </ul>
-
-
-
+      <Maping />
     </div>
   );
 }

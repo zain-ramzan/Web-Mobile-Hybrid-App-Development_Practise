@@ -6,3 +6,7 @@ body{
 li{
   list-style: none;
 }
+h2{
+  background-color: white;
+  color: #282c34;
+}
