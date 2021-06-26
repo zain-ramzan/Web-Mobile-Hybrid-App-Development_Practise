@@ -11,6 +11,15 @@ class Learn extends React.Component {
             institute : "PIAIC"
         }
     }   
+
+
+    //Create Function inside the constructor
+        //Don't use Function keyword - Simply use function name e.g set_name
+    set_name(){
+        console.log("Runnig...!");
+    };
+
+
     render(){
         return(
             <div>
@@ -18,6 +27,7 @@ class Learn extends React.Component {
             <h4>My name is {this.state.name}</h4>
             <h4>My Batch is: {this.state.batch}</h4>
             <h4>My Institute name is:{this.state.institute}</h4>
+            <button onClick={this.set_name}>Start</button>
             </div>
         )
     } 
