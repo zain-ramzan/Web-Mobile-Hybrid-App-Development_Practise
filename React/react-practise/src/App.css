@@ -10,3 +10,12 @@ h2{
   background-color: white;
   color: #282c34;
 }
+button{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #282c34;
+}
+button:hover{
+  width: 200px;
+}
