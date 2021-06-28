@@ -19,6 +19,7 @@ class Learn extends React.Component {
         console.log(this.state.name);
         console.log(this.state.batch);
         console.log(this.state.institute);
+        console.log("-------------------");
     };
 
 
