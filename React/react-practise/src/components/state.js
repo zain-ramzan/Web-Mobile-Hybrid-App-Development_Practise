@@ -11,20 +11,20 @@ class Learn extends React.Component {
             institute : "PIAIC"
         }
     }   
-    set_name = () => {
-        this.setState({
-            name: "Hamza"
-        })
-    }
+    // set_name = () => {
+    //     this.setState({
+    //         name: "Hamza"
+    //     })
+    // }
 
 
 
     //Create Function inside the constructor
         //Don't use Function keyword - Simply use function name e.g set_name
-    get_name = () => {
-        console.log(this.state.name);
-    };
-    set_
+
+    // get_name = () => {
+    //     console.log(this.state.name);
+    // };
 
 
     render(){
@@ -34,6 +34,7 @@ class Learn extends React.Component {
             <h4>My name is {this.state.name}</h4>
             <h4>My Batch is: {this.state.batch}</h4>
             <h4>My Institute name is:{this.state.institute}</h4>
+            <input type='text' placeholder="Enter your name" onChange={(e)=>this.setState({name: e.target.value})} /><br /><br/>
             <button onClick={this.set_name}>Set Student Detaile</button> <br/>
             <button onClick={this.get_name}>Get Student Detaile</button>
             </div>
