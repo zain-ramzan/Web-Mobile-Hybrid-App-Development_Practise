@@ -31,10 +31,11 @@ class Learn extends React.Component {
         return(
             <div>
             <h2>State</h2>
-            <h4>My name is {this.state.name}</h4>
+            <h4>Input Value {this.state.name}</h4>
             <h4>My Batch is: {this.state.batch}</h4>
             <h4>My Institute name is:{this.state.institute}</h4>
-            <input type='text' placeholder="Enter your name" onChange={(e)=>this.setState({name: e.target.value})} /><br /><br/>
+            <h3></h3>
+            <input type='text' placeholder="Real time input" onChange={(e)=>this.setState({name: e.target.value})} /><br /><br/>
             <button onClick={this.set_name}>Set Student Name</button> <br/>
             <button onClick={this.get_name}>Get Student</button>
             </div>
