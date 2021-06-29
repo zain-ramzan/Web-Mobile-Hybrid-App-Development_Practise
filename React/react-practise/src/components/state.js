@@ -34,9 +34,9 @@ class Learn extends React.Component {
             <h4>My name is  {this.state.name}</h4>
             <h4>My Batch is: {this.state.batch}</h4>
             <h4>My Institute name is:{this.state.institute}</h4>
-            <input type='text' placeholder="Real time input" onChange={(e)=>this.setState({name: e.target.value})} />
+            <input type='text' placeholder="Real time input..." onChange={(e)=>this.setState({name: e.target.value})} />
             <h3>-------</h3>
-            <input type='text' placeholder="Real time input" onChange={(e)=>this.setState({value: e.target.value})} /><br/><br/>
+            <input type='text' placeholder="Enter you Name..." onChange={(e)=>this.setState({value: e.target.value})} /><br/><br/>
             <button onClick={this.set_name}>Set Student Name</button> <br/>
             <button onClick={this.get_name}>Get Student</button>
             </div>
