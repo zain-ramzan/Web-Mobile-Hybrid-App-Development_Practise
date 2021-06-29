@@ -36,7 +36,7 @@ class Learn extends React.Component {
             <h4>My Institute name is:{this.state.institute}</h4>
             <input type='text' placeholder="Enter your name" onChange={(e)=>this.setState({name: e.target.value})} /><br /><br/>
             <button onClick={this.set_name}>Set Student Name</button> <br/>
-            <button onClick={this.get_name}>Get Student Detaile</button>
+            <button onClick={this.get_name}>Get StudentDetaile</button>
             </div>
         )
     } 
