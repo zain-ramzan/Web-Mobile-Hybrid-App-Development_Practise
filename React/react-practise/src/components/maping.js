@@ -1,11 +1,12 @@
 import React from 'react';
 import '../App.css';
+let todos = [{name:"Zain"},{name:"Saad"}];
 
-function Maping() {
-  let todos = [{name: "Hamza"},{name:"Zain"},{name:"Saad"}]
-  return (
-    <div>
-      <h2>Maping</h2>
+class Maping extends React.Component{
+  render(){
+    return(
+      <div>
+      <h2>{this.props.page}</h2>
       <ul>
         {todos.map((item,index)=>{
           return(
@@ -14,7 +15,8 @@ function Maping() {
         })}
       </ul>
     </div>
-  );
+    )
+  }
 }
 
 export default Maping;

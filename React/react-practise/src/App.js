@@ -4,12 +4,11 @@ import Learn from "./components/state";
 import './App.css';
 
 function App() {
-  let todos = [{name:"Zain"},{name:"Saad"}]
   return (
     <div>
       <h1>React Practise</h1>
-      <Maping />
-      <Learn />
+      <Maping page="Maping Pages using Props" />
+      <Learn page="State Pages using Props" />
     </div>
   );
 }

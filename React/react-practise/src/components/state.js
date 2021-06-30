@@ -10,11 +10,11 @@ class Learn extends React.Component {
             email: "zain@gmail.com"
         }
     }   
-    set_name = () => {
-        this.setState({
-            name: this.state.value
-        })
-    }
+    // set_name = () => {
+    //     this.setState({
+    //         name: this.state.value
+    //     })
+    // }/
     getValue = (e) =>{
         this.setState({
             [e.target.name]: e.target.value
@@ -29,9 +29,9 @@ class Learn extends React.Component {
     // get_name = () => {
     //     console.log(this.state.name);
     // };
-
-
+    
     render(){
+        console.log("Props --->",this.props);
         return(
             <div>
             {/* 
@@ -46,7 +46,7 @@ class Learn extends React.Component {
 
 
 
-            <h2>State</h2>
+            <h2>{this.props.page}</h2>
             <h3>Student Name: {this.state.name}</h3>
             <h3>Student Email: {this.state.email}</h3>
             <input 
