@@ -10,7 +10,7 @@ h2{
   background-color: white;
   color: #282c34;
 }
-/* button{
+button{
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
@@ -18,7 +18,7 @@ h2{
 }
 button:hover{
   width: 200px;
-} */
+}
 input{
   padding: 10px;
   font-size: 20px;
