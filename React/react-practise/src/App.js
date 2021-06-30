@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <h1>React Practise</h1>
-      <Maping page="Maping Pages using Props" />
+      <Maping page="State Pages using Props"/>
       <Learn page="State Pages using Props" />
     </div>
   );
