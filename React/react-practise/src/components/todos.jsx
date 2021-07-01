@@ -14,6 +14,12 @@ class Todos extends React.Component {
             value: ""
         })
     }
+    delete_list = (i) =>{
+        this.state.todos.splice(i,1);
+        this.setState({
+            todos: this.state.todos
+        })
+    }
 
     render() {
         let { todos, value } = this.state;
@@ -25,14 +31,12 @@ class Todos extends React.Component {
                     placeholder="Enter the Value..." 
                     onChange={(e) => this.setState({ value: e.target.value })} 
                     value={value} 
-                    /> 
-                    
-
+                    />
                 <button 
                 onClick={this.get_todos}>Add Todos</button>
                 <ul>
                     {todos.map((v, i) => {
-                        return <li>{i} - {v}</li>
+                        return <li key={i}>{i+1} - {v} <button onClick={()=>this.delete_list(i)}>Delete</button> </li>
                     }
                     )}
                 </ul>
