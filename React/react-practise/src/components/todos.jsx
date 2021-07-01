@@ -39,6 +39,12 @@ class Todos extends React.Component {
             todos: this.state.todos
         })
     }
+    delete_all=()=>{
+        this.state.todos.splice(0)
+        this.setState({
+            todos: this.state.todos
+        })
+    }
 
     render() {
         let { todos, value } = this.state;
@@ -51,7 +57,10 @@ class Todos extends React.Component {
                     onChange={(e) => this.setState({ value: e.target.value })} 
                     value={value} 
                     />
-                <button onClick={this.get_todos}>Add Todos</button>
+
+                    
+                <button onClick={this.get_todos}>Add Todos</button> 
+                <button onClick={this.delete_all}>Delete All</button>
                 <ul>
                     {todos.map((v, i) => {
                         return <li key={i}>{i+1} - 
