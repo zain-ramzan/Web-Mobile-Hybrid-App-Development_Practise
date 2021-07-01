@@ -22,3 +22,7 @@ input{
   padding: 5px;
   font-size: 15px;
 }
+button:disabled{
+  color: grey;
+  cursor: no-drop;
+}
