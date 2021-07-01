@@ -15,9 +15,9 @@ class App extends React.Component {
     return (
       <div>
         <h1>React Practise</h1>
-        {/* <Maping page="State Pages using Props" />
+        <Maping page="State Pages using Props" />
         <Learn page="State Pages using Props" />
-        <LearnProps message="This Props is from parent-to-child" getData={this.get_data} /> */}
+        <LearnProps message="This Props is from parent-to-child" getData={this.get_data} />
         <Todos />
       </div>
     );
