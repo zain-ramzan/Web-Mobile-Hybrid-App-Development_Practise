@@ -7,7 +7,7 @@ class Learn extends React.Component {
         super()
         this.state = {
             name : "Zain Ramzan",
-            email: "zain@gmail.com"
+            email: "zain"
         }
     }   
     // set_name = () => {
@@ -48,7 +48,7 @@ class Learn extends React.Component {
 
             <h2>{this.props.page}</h2>
             <h3>Student Name: {this.state.name}</h3>
-            <h3>Student Email: {this.state.email}</h3>
+            <h3>Student Email: {this.state.email}@gmail.com</h3>
             <input 
                 name="name" 
                 text="text" 
