@@ -51,9 +51,15 @@ class Todos extends React.Component {
         let { todos, value } = this.state;
         return (
             <div>
-                <h2>Todo List</h2>
-                Enter the Todos - 
-                <input type="text" placeholder="Enter the Value..." onChange={(e) => this.setState({ value: e.target.value })} value={value}/>
+                <h1>React Practise</h1>
+                <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
+                <button onClick={() => this.props.history.push("/maping")}>Maping</button>
+                <button onClick={() => this.props.history.push("/state")}>State</button>
+                <button onClick={() => this.props.history.push("/props")}>Props</button>
+
+                <h2>Todo Application</h2>
+                Enter the Todos -
+                <input type="text" placeholder="Enter the Value..." onChange={(e) => this.setState({ value: e.target.value })} value={value} />
                 <abbr title="Button Disabled! Please Enter the Value."><button disabled={!value} onClick={this.get_todos}>Add Todos</button></abbr>
                 <abbr title="Button Disabled! Please Enter the Todos."><button disabled={todos == ""} onClick={this.delete_all}>Delete All</button> </abbr>
                 <ul>

@@ -3,19 +3,19 @@ import '../App.css'
 
 
 class Learn extends React.Component {
-    constructor(){
+    constructor() {
         super()
         this.state = {
-            name : "Zain Ramzan",
+            name: "Zain Ramzan",
             email: "zain"
         }
-    }   
+    }
     // set_name = () => {
     //     this.setState({
     //         name: this.state.value
     //     })
     // }/
-    getValue = (e) =>{
+    getValue = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -24,17 +24,23 @@ class Learn extends React.Component {
 
 
     //Create Function inside the constructor
-        //Don't use Function keyword - Simply use function name e.g set_name
+    //Don't use Function keyword - Simply use function name e.g set_name
 
     // get_name = () => {
     //     console.log(this.state.name);
     // };
-    
-    render(){
-        console.log("Props --->",this.props);
-        return(
+
+    render() {
+        console.log("Props --->", this.props);
+        return (
             <div>
-            {/* 
+                <h1>React Practise</h1>
+                <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
+                <button onClick={() => this.props.history.push("/maping")}>Maping</button>
+                <button onClick={() => this.props.history.push("/state")}>State</button>
+                <button onClick={() => this.props.history.push("/props")}>Props</button>
+
+                {/* 
             <h4>My name is  {this.state.name}</h4>
             <h4>My Batch is: {this.state.batch}</h4>
             <h4>My Institute name is:{this.state.institute}</h4>
@@ -46,23 +52,23 @@ class Learn extends React.Component {
 
 
 
-            <h2>{this.props.page}</h2>
-            <h3>Student Name: {this.state.name}</h3>
-            <h3>Student Email: {this.state.email}@gmail.com</h3>
-            <input 
-                name="name" 
-                text="text" 
-                placeholder="Enter your Name..." 
-                onChange={(e)=>this.getValue(e)} 
+                <h2>{this.props.page}</h2>
+                <h3>Student Name: {this.state.name}</h3>
+                <h3>Student Email: {this.state.email}@gmail.com</h3>
+                <input
+                    name="name"
+                    text="text"
+                    placeholder="Enter your Name..."
+                    onChange={(e) => this.getValue(e)}
                 />
-            <br/>
-            <br/>
-            <input 
-                name="email"  
-                text="text" 
-                placeholder="Enter your Email..." 
-                onChange={(e)=>this.getValue(e)} 
-            />
+                <br />
+                <br />
+                <input
+                    name="email"
+                    text="text"
+                    placeholder="Enter your Email..."
+                    onChange={(e) => this.getValue(e)}
+                />
 
 
 
@@ -70,6 +76,6 @@ class Learn extends React.Component {
 
             </div>
         )
-    } 
+    }
 }
 export default Learn;
