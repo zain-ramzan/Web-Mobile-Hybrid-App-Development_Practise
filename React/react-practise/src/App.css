@@ -26,3 +26,6 @@ button:disabled{
   color: grey;
   cursor: no-drop;
 }
+b{
+  color: chartreuse;
+}

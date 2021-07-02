@@ -10,9 +10,9 @@ class App extends React.Component {
         <button onClick={()=>this.props.history.push("/state")}>State</button>
         <button onClick={()=>this.props.history.push("/props")}>Props</button>
 
-        {/* <Maping page="State Pages using Props" /> 
+         {/*<Maping page="State Pages using Props" /> 
         <Learn page="State Pages using Props" />
-        <LearnProps message="This Props is from parent-to-child" getData={this.get_data} />
+        <Props message="This Props is from parent-to-child" />
         <Todos /> */}
       </div>
     );
