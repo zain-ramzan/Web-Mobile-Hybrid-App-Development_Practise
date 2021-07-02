@@ -5,6 +5,7 @@ class Maping extends React.Component {
   render() {
     return (
       <div>
+        
         <h2>Maping</h2>
         <ul>
           {todos.map((item, index) => {
