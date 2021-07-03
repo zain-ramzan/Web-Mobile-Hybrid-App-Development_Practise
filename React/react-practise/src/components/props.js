@@ -17,18 +17,16 @@ class Props extends React.Component {
                 <h3>For Collecting data from <b>Parent to Child</b></h3>
                 <p>
                     we have to send data, same like anchor take in HTML e.g <br></br>
-                    <img src={Parent} width="500"/>
+                    <img src={Parent} width="500" />
                 </p>
                 <hr style={{ width: 300 }}></hr>
                 <h3>For Collecting data from <b>Child to Parent</b></h3>
                 <p>
                     we have to send data, as a function in the element e.g <br></br>
-                    {/* <button onClick={()=>this.props.getData("This Props is from Child-to-Parent")}></button> */}
-                    <img src={Child} width="700"/>
+                    <img src={Child} width="700" />
                 </p>
 
 
-                <button onClick={() => this.props.getData("This Props is from Child-to-Parent")}>Get Data</button>
             </div>
         )
     }
