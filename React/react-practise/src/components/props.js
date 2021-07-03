@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css'
-import Parent from "./p-to-c.png"
+import Parent from "./p-to-c.png";
+import Child from "./c-to-p.png"
 
 class Props extends React.Component {
     render() {
@@ -23,6 +24,7 @@ class Props extends React.Component {
                 <p>
                     we have to send data, as a function in the element e.g <br></br>
                     <button onClick={()=>this.props.getData("This Props is from Child-to-Parent")}></button>
+                    <img src={Child}/>
                 </p>
 
 
