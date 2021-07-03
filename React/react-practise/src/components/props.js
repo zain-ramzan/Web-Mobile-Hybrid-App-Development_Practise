@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css'
+import Parent from "./p-to-c.png"
 
 class Props extends React.Component {
     render() {
@@ -15,13 +16,13 @@ class Props extends React.Component {
                 <h3>For Collecting data from <b>Parent to Child</b></h3>
                 <p>
                     we have to send data, same like anchor take in HTML e.g <br></br>
-                    &lt;<b style={{ color: 'lightgreen' }}>App</b>  <i>message="This is the message."</i>/&gt;
+                    <img src={Parent}/>
                 </p>
                 <hr style={{ width: 300 }}></hr>
                 <h3>For Collecting data from <b>Child to Parent</b></h3>
                 <p>
                     we have to send data, as a function in the element e.g <br></br>
-                    {/* &lt;<b style={{ color: 'lightgreen' }}>button</b> <i>onClick={this.props.getData("This Props is from Child-to-Parent")}</i> &gt;&lt;<b style={{ color: 'lightgreen' }}>button</b>&gt; */}
+                    <button onClick={()=>this.props.getData("This Props is from Child-to-Parent")}></button>
                 </p>
 
 
