@@ -37,21 +37,7 @@ class Learn extends React.Component {
                 <h1>React Practise</h1>
                 <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
                 <button onClick={() => this.props.history.push("/maping")}>Maping</button>
-                <button onClick={() => this.props.history.push("/state")}>State</button>
                 <button onClick={() => this.props.history.push("/props")}>Props</button>
-
-                {/* 
-            <h4>My name is  {this.state.name}</h4>
-            <h4>My Batch is: {this.state.batch}</h4>
-            <h4>My Institute name is:{this.state.institute}</h4>
-            <input type='text'onChange={(e)=>this.setState({name: e.target.value})} />
-            <h3>-------</h3>
-            <input type='text' onChange={(e)=>this.setState({value: e.target.value})} /><br/><br/>
-            <button onClick={this.set_name}>Set Student Name</button> <br/>
-            <button onClick={this.get_name}>Get Student</button> */}
-
-
-
                 <h2>{this.props.page}</h2>
                 <h3>Student Name: {this.state.name}</h3>
                 <h3>Student Email: {this.state.email}@gmail.com</h3>
@@ -69,11 +55,6 @@ class Learn extends React.Component {
                     placeholder="Enter your Email..."
                     onChange={(e) => this.getValue(e)}
                 />
-
-
-
-
-
             </div>
         )
     }

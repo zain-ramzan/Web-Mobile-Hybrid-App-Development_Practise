@@ -11,8 +11,6 @@ class Props extends React.Component {
                 <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
                 <button onClick={() => this.props.history.push("/maping")}>Maping</button>
                 <button onClick={() => this.props.history.push("/state")}>State</button>
-                <button onClick={() => this.props.history.push("/props")}>Props</button>
-
                 <h2>Learn Props</h2>
                 <h3>For Collecting data from <b>Parent to Child</b></h3>
                 <p>

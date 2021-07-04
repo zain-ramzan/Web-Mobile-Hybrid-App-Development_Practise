@@ -45,8 +45,6 @@ class Todos extends React.Component {
             todos: this.state.todos
         })
     }
-
-
     render() {
         let { todos, value } = this.state;
         return (
