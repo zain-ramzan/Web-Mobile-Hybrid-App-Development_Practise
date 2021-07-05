@@ -4,7 +4,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>React Practise</h1>
+        <h1>React Js Practise</h1>
         <button onClick={()=>this.props.history.push("/todo_application")}>Todo App</button>
         <button onClick={()=>this.props.history.push("/maping")}>Maping</button>
         <button onClick={()=>this.props.history.push("/state")}>State</button>

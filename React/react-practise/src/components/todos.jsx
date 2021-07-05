@@ -50,7 +50,6 @@ class Todos extends React.Component {
         return (
             <div>
                 <h1>React Practise</h1>
-                <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
                 <button onClick={() => this.props.history.push("/maping")}>Maping</button>
                 <button onClick={() => this.props.history.push("/state")}>State</button>
                 <button onClick={() => this.props.history.push("/props")}>Props</button>
