@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import {set_data} from "./store/Action"
 
 class App extends React.Component {
   render() {
@@ -8,6 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <button onClick={() => this.props.history.push("/")}>Reload</button>
+        <button onClick={()=>this.props.set_Data()}>Set Data</button>
         <h1>React Js Practise</h1>
         <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
         <button onClick={() => this.props.history.push("/maping")}>Maping</button>
@@ -27,4 +29,10 @@ const mapStateToProps = (state) => ({
   name: state.name,
   email: state.email
 })
-export default connect(mapStateToProps, null)(App);
+
+const mapDispatchToProps = (dispatch) => ({
+  set_Data: ()=> set_data()
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
