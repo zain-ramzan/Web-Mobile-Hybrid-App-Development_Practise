@@ -1,6 +1,7 @@
 const set_data =()=>{
-    console.log("Hello world from actions@")
-
+    return (dispatch)=>{
+console.log("hloo");
+    }
 }
 
 export {

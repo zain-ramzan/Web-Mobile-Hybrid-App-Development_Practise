@@ -31,7 +31,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  set_Data: ()=> set_data()
+  set_Data: ()=> dispatch(set_data())
 })
 
 
