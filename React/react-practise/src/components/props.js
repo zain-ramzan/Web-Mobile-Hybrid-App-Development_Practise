@@ -7,6 +7,7 @@ class Props extends React.Component {
     render() {
         return (
             <div>
+                <button onClick={() => this.props.history.push("/")}>Reload</button>
                 <h1>React Practise</h1>
                 <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
                 <button onClick={() => this.props.history.push("/maping")}>Maping</button>

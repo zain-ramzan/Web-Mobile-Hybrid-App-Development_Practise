@@ -7,6 +7,7 @@ class App extends React.Component {
     console.log("React-Redux Data ===>", this.props);
     return (
       <div>
+        <button onClick={() => this.props.history.push("/")}>Reload</button>
         <h1>React Js Practise</h1>
         <button onClick={() => this.props.history.push("/todo_application")}>Todo App</button>
         <button onClick={() => this.props.history.push("/maping")}>Maping</button>

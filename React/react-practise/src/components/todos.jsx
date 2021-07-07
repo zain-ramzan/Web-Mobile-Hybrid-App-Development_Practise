@@ -49,6 +49,7 @@ class Todos extends React.Component {
         let { todos, value } = this.state;
         return (
             <div>
+                <button onClick={() => this.props.history.push("/")}>Reload</button>
                 <h1>React Practise</h1>
                 <button onClick={() => this.props.history.push("/maping")}>Maping</button>
                 <button onClick={() => this.props.history.push("/state")}>State</button>
