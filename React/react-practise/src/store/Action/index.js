@@ -1,7 +1,12 @@
 const set_data = () => {
     return (dispatch) => {
-        console.log("hloo");
-        dispatch({type: "Hello World! React Js"})
+        dispatch({ type: "Redux-Data", 
+                    users: { 
+                            name: "Zain Ramzan", 
+                            email: "zainramzan7133@gmail.com",
+                            rollno: 98765 
+                        } },
+        )
     }
 }
 
