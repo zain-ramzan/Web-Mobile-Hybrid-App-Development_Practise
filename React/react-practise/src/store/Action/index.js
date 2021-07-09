@@ -4,7 +4,8 @@ const set_data = () => {
                     users: { 
                             name: "Zain Ramzan", 
                             email: "zainramzan7133@gmail.com",
-                            rollno: 98765 
+                            rollno: 98765,
+                            school: "   PIAIC" 
                         } },
         )
     }
